@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VINZY H4X</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', monospace;
+      background-color: #0a001a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #6f00ff, #9900cc);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px #aa00ff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+
+    #typingText {
+      color: red;
+      font-weight: bold;
+      text-shadow: 0 0 5px red, 0 0 10px red;
+      font-family: monospace;
+    }
+
+    .section {
+      border-bottom: 1px solid #333;
+    }
+
+    .accordion {
+      background-color: #1a1a1a;
+      color: #fff;
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      font-size: 1.2rem;
+    }
+
+    .accordion:hover {
+      background-color: #222;
+    }
+
+    .panel {
+      padding: 0 20px;
+      display: none;
+      background-color: #121212;
+      overflow: hidden;
+    }
+
+    .panel ul {
+      list-style: none;
+      padding: 10px 0;
+    }
+
+    .panel ul li {
+      margin: 10px 0;
+      border-bottom: 1px dashed #444;
+      padding-bottom: 10px;
+    }
+
+    .product-item {
+      display: flex;
+      flex-direction: column;
+      margin: 15px 0;
+      border-bottom: 1px dashed #444;
+      padding-bottom: 10px;
+    }
+
+    .product-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .label {
+      color: #fff;
+      font-style: italic;
+    }
+
+    .slash {
+      color: #00ccff;
+      margin: 0 6px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: #0f0;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .contact {
+      padding: 20px;
+      background: #0d0d0d;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #00ffff;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      border: 1px solid #00ffff;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background-color: #00ffff;
+      color: #000;
+    }
+
+    .contact a img {
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #666;
+      font-size: 0.9rem;
+      background-color: #0a0a0a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/HXVga4N.png" alt="VINZY Logo" />
+    <h1>VINZY H4X</h1>
+    <p id="typingText"></p>
+  </header>
+
+  <div class="section">
+    <button class="accordion">🛒 Product Available</button>
+    <div class="panel">
+      <ul>
+        <li>Bypass Premium</li>
+        <li>Esp External</li>
+        <li>Optimize</li>
+        <li>Setting Emulator & Sensi</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="accordion">📋 Product Details</button>
+    <div class="panel">
+      <ul>
+        <li><strong>Bypass Premium</strong><br>Melindungi sistem dari deteksi 99% aman.</li>
+        <li><strong>Esp External</strong><br>Menampilkan musuh dan item secara real time.</li>
+        <li><strong>Optimize</strong><br>Meningkatkan performa FPS dan kestabilan.</li>
+        <li><strong>Setting Emulator Emulator & Sensi</strong><br>Setting optimal untuk FF PC semua spek.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="accordion">💵 Price</button>
+    <div class="panel">
+      <ul>
+        <li class="product-item">
+          <div class="product-title">
+            Bypass Premium
+            <span class="slash">=</span><span class="label">7 Days</span>
+            <span class="slash">/</span><span class="label">2 Week</span>
+            <span class="slash">/</span><span class="label">1 Mounth</span>
+          </div>
+          <div class="price">Rp 60.000 <span class="slash">/</span> Rp 110.000 <span class="slash">/</span> Rp 220.000</div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-title">
+            Esp External
+            <span class="slash">=</span><span class="label">1 Mounth</span>
+          </div>
+          <div class="price">Rp 90.000</div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-title">
+            Optimize
+            <span class="slash"></span><span class="label"></span>
+          </div>
+          <div class="price">Rp 120.000</div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-title">
+            Setting Emulator & Sensi
+            <span class="slash"></span><span class="label"></span>
+          </div>
+          <div class="price">Rp 50.000</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Section with Icons -->
+  <div class="section contact">
+    <h3>📞 Contact Us!</h3>
+    <p>We are active 24/7 on these platforms:</p>
+
+    <a href="https://wa.me/6288808589715" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp">
+      WhatsApp Admin
+    </a>
+
+    <a href="https://web.telegram.org/k/#-4765921250" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/2111/2111646.png" alt="Telegram">
+      Telegram
+    </a>
+
+    <a href="mailto:rinaldolala38@gmail.com">
+      <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email">
+      Email Us
+    </a>
+
+    <a href="https://discord.gg/FEKkGspYVQ" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/5968/5968756.png" alt="Discord">
+      Join Discord
+    </a>
+  </div>
+
+  <!-- Footer with Developer Info -->
+  <footer>
+    &copy; 2025 VINZY H4X. All rights reserved.<br>
+    <span style="display:block; margin-top:6px; color:#00ffff; font-weight:bold;">
+      Developed by <a href="https://github.com/erlangcode" target="_blank" style="color:#00ffff; text-decoration:underline;">erlangcode</a>
+    </span>
+  </footer>
+
+  <script>
+    // Accordion
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+
+    // Typing effect
+    const text = "> Access granted... Loading the secret catalogue.";
+    const el = document.getElementById("typingText");
+    let i = 0;
+
+    function typeNext() {
+      if (i < text.length) {
+        const span = document.createElement("span");
+        span.textContent = text[i];
+        span.style.color = "red";
+        el.appendChild(span);
+        i++;
+        setTimeout(typeNext, 60);
+      }
+    }
+
+    window.addEventListener("load", typeNext);
+  </script>
+
+</body>
+</html>
